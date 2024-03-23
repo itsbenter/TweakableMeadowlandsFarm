@@ -1,0 +1,15 @@
+{
+   "$schema": "https://smapi.io/schemas/manifest.json",
+   "Name": "Tweakable Meadowlands Farm",
+   "Author": "ItsBenter",
+   "Version": "1.1.2",
+   "Description": "Adds options to configure grass, dirt, and pond in Meadowlands Farm.",
+   "UniqueID": "ItsBenter.TweakableMeadowlandsFarm.CP",
+   "MinimumApiVersion": "4.0.0",
+   "UpdateKeys": [
+      "Nexus:20742"
+   ],
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+   }
+}

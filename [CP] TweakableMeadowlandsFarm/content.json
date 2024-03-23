@@ -1,0 +1,97 @@
+{
+  "$schema": "https://smapi.io/schemas/content-patcher.json",
+  "Format": "2.0.0",
+  "ConfigSchema": {
+    //Basic Config
+    "MeadowlandsFarmVersion": {
+      "Default": "Default",
+      "AllowValues": "Default, FullDirtField, NeaterDirtField, NoRandomGrassPatches",
+    },
+    "RemoveCentralPond": {
+      "Default": "false",
+      "AllowValues": "true, false",
+    },
+    "RemoveWestPond": {
+      "Default": "false",
+      "AllowValues": "true, false",
+    },
+    "RemoveEastPond": {
+      "Default": "false",
+      "AllowValues": "true, false",
+    },
+    "TillableGrass": {
+      "Default": "false",
+      "AllowValues": "true, false",
+    }
+  },
+  "DynamicTokens": [
+    {
+      "Name": "TillableGrassToken",
+      "Value": "",
+    },
+    {
+      "Name": "TillableGrassToken",
+      "Value": "_TillableGrass",
+      "When": {
+        "TillableGrass": true
+      }
+    },
+  ],
+  "Changes": [
+    {
+      "LogName": "Load Meadowlands Farm Map - Default Map",
+      "Action": "Load",
+      "Target": "Maps/Farm_Ranching",
+      "FromFile": "Farm_Ranching{{TillableGrassToken}}.tmx",
+      "When": {
+        "MeadowlandsFarmVersion |contains=Default": true,
+        "TillableGrass": true
+      }
+    },
+    {
+      "LogName": "Load Meadowlands Farm Map - Edited Map",
+      "Action": "Load",
+      "Target": "Maps/Farm_Ranching",
+      "FromFile": "Farm_Ranching_{{MeadowlandsFarmVersion}}{{TillableGrassToken}}.tmx",
+      "When": {
+        "MeadowlandsFarmVersion |contains=Default": false
+      }
+    },
+    {
+      "LogName": "Remove Big Central Pond",
+      "Action": "EditMap",
+      "Target": "Maps/Farm_Ranching",
+      "FromFile": "Farm_Ranching_RemovedPonds.tmx",
+      "FromArea": { "X": 30, "Y": 41, "Width": 16, "Height": 11 },
+      "ToArea": { "X": 30, "Y": 41, "Width": 16, "Height": 11 },
+      "PatchMode": "Replace",
+      "When": {
+        "RemoveCentralPond": true
+      },
+    },
+    {
+      "LogName": "Remove Small West Pond",
+      "Action": "EditMap",
+      "Target": "Maps/Farm_Ranching",
+      "FromFile": "Farm_Ranching_RemovedPonds.tmx",
+      "FromArea": { "X": 15, "Y": 59, "Width": 7, "Height": 5 },
+      "ToArea": { "X": 15, "Y": 59, "Width": 7, "Height": 5 },
+      "PatchMode": "Replace",
+      "When": {
+        "RemoveWestPond": true
+      },
+    },
+    {
+      "LogName": "Remove Small East Pond",
+      "Action": "EditMap",
+      "Target": "Maps/Farm_Ranching",
+      "FromFile": "Farm_Ranching_RemovedPonds.tmx",
+      "FromArea": { "X": 66, "Y": 55, "Width": 10, "Height": 7 },
+      "ToArea": { "X": 66, "Y": 55, "Width": 10, "Height": 7 },
+      "PatchMode": "Replace",
+      "When": {
+        "RemoveEastPond": true
+      },
+    }
+  ]
+}

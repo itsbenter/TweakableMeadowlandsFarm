@@ -1,0 +1,2 @@
+Assets in this project are modification of Stardew Valley assets. All the rights belong to Eric Barone (ConcernedApe)<br>
+Patch to apply the edit is licensed under the [MIT license](https://mit-license.org/).
