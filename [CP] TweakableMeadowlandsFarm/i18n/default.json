@@ -2,7 +2,7 @@
   "$schema": "https://smapi.io/schemas/i18n.json",
   //Basic Configuration
   "config.MeadowlandsFarmVersion.name": "Meadowlands Farm Version",
-  "config.MeadowlandsFarmVersion.description": "Select the map to use. Preview is available on the mod folder, Nexus page, and GitHub.",
+  "config.MeadowlandsFarmVersion.description": "Select the map to use. Preview is available on Nexus page and GitHub.",
   "config.RemoveCentralPond.name": "Remove Central Pond",
   "config.RemoveWestPond.name": "Remove West Pond",
   "config.RemoveEastPond.name": "Remove East Pond",
