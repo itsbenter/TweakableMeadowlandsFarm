@@ -12,11 +12,23 @@
 
 The mod config supports:
 
-- Choosing between four different maps (one is the default)
+- Choosing between several different map versions
 - Setting the grass tiles to become tillable
 - Removing pond(s)
 
-Here look of some edited maps.
+Here are the looks of some edited maps.
+
+**FullGrassField**
+![FullGrassField](Documentation/FullGrassField.png)
+
+**FullGrassField map with ponds removed**
+![FullGrassFieldRemovedPonds](Documentation/FullGrassFieldRemovedPonds.png)
+
+**MoreGrass**
+![MoreGrass](Documentation/MoreGrass.png)
+
+**SplittedGrassField**
+![SplittedGrassField](Documentation/SplittedGrassField.png)
 
 **FullDirtField**
 ![FullDirtField](Documentation/FullDirtField.png)
@@ -27,20 +39,8 @@ Here look of some edited maps.
 **NoRandomGrassPatches**
 ![NoRandomGrassPatches](Documentation/NoRandomGrassPatches.png)
 
-**SplittedGrassField**
-![SplittedGrassField](Documentation/SplittedGrassField.png)
-
-**MoreGrass**
-![MoreGrass](Documentation/MoreGrass.png)
-
-**FullGrassField**
-![FullGrassField](Documentation/FullGrassField.png)
-
 **Default map with ponds removed**
 ![DefaultMapRemovedPonds](Documentation/DefaultMapRemovedPonds.png)
-
-**FullGrassField map with ponds removed**
-![FullGrassFieldRemovedPonds](Documentation/FullGrassFieldRemovedPonds.png)
 
 ## FAQ
 
