@@ -12,9 +12,14 @@
 
 The mod config supports:
 
-- Choosing between several different map versions
-- Setting the grass tiles to become tillable
+- Choosing between different map versions
+- Making the grass tiles to become tillable
 - Removing pond(s)
+- Removing fence
+- Replacing plank to Grand shrine with stone bridge or bigger plank
+- Adding hot springs map
+- Adding renewable stumps in Granpa shrine area
+- Spawning forage with same rate as forest farm
 
 Here are the looks of some edited maps.
 
