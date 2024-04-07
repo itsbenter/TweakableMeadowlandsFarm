@@ -2245,6 +2245,7 @@
   <tile id="512">
    <properties>
     <property name="Buildable" value="t"/>
+    <property name="Diggable" value="T"/>
     <property name="NoSpawn" value="Tree"/>
     <property name="Type" value="Dirt"/>
    </properties>
@@ -2295,6 +2296,7 @@
   <tile id="538">
    <properties>
     <property name="Buildable" value="T"/>
+    <property name="Diggable" value="T"/>
    </properties>
   </tile>
   <tile id="549">
@@ -2340,6 +2342,7 @@
   <tile id="562">
    <properties>
     <property name="Buildable" value="t"/>
+    <property name="Diggable" value="T"/>
     <property name="NoSpawn" value="Tree"/>
     <property name="Type" value="Dirt"/>
    </properties>
@@ -2367,6 +2370,7 @@
   <tile id="566">
    <properties>
     <property name="Buildable" value="T"/>
+    <property name="Diggable" value="T"/>
     <property name="NoSpawn" value="Tree"/>
     <property name="Type" value="Dirt"/>
    </properties>
@@ -2452,6 +2456,7 @@
   <tile id="588">
    <properties>
     <property name="Buildable" value="T"/>
+    <property name="Diggable" value="T"/>
     <property name="Type" value="Dirt"/>
    </properties>
   </tile>
@@ -2557,6 +2562,7 @@
   <tile id="615">
    <properties>
     <property name="Buildable" value="T"/>
+    <property name="Diggable" value="T"/>
    </properties>
   </tile>
   <tile id="616">
@@ -2623,6 +2629,7 @@
   <tile id="645">
    <properties>
     <property name="Buildable" value="T"/>
+    <property name="Diggable" value="T"/>
     <property name="NoSpawn" value="Tree"/>
     <property name="Type" value="Dirt"/>
    </properties>
